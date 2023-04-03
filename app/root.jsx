@@ -8,7 +8,7 @@ import {
   ScrollRestoration
 } from '@remix-run/react'
 
-import globalStyles from '~/styles/global.css'
+import globalStyles from './styles/global.css'
 
 export const meta = () => ({
   charset: 'utf-8',
@@ -20,11 +20,11 @@ export const links = () => {
   return ({
     rel: 'stylesheet',
     href: globalStyles
-  },
-  {
-    rel: 'stylesheet',
-    href: 'https://cdn.simplecss.org/simple.min.css'
   })
+  // {
+  //   rel: 'stylesheet',
+  //   href: 'https://cdn.simplecss.org/simple.min.css'
+  // })
 }
 
 function Layout () {

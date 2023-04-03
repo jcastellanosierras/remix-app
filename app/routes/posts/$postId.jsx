@@ -8,14 +8,11 @@ export const loader = async ({ params }) => {
     }
   })
 
-  console.log(post)
-
   return post
 }
 
 export default function SinglePost () {
   const data = useLoaderData()
-  console.log(data)
 
   return (
     <>
